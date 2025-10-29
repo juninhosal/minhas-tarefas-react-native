@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "lista-de-tarefas",
+    "slug": "lista-de-tarefas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "listadetarefas",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.listadetarefas"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
