@@ -53,7 +53,12 @@ export default function IndexScreen() {
             </View>
             <FlatList
                 data={tasks}
-                renderItem={({item}) => <Task text={item.text} initialCompleted={item.completed}/>}
+                renderItem={({item}) =>
+                    <Task text={item.text}
+                          initialCompleted={item.completed}
+                          deleteTask={() => setTasks(tasks.filter(task => task.id !== item.id))}
+                    />
+            }
                 keyExtractor={(item, index) => index.toString()}
             />
         </View>
